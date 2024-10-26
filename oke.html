@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="var.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-image: url(066e68fe0654ca36f58cac010ee0d5a0.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            
+        }
+        body:hover{
+            transition: 2s;
+            background-image: url(22110715-ub5r1yafg1051-1590054067-728-a10a9c6dd9-1590677587-728x615.jpg);
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input style="position: relative; left: -10px;" type="text" id="username" placeholder="Enter username">
+        <input style="position: relative; left: -10px;" type="password" id="password" placeholder="Enter password">
+        <button onclick="login()">Click</button>
+        <p id="message" style="color: red; display: none;">Invalid credentials!</p>
+    </div>
+</body>
+</html>
